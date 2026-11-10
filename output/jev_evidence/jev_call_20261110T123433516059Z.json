@@ -1,0 +1,443 @@
+{
+  "captured_at": "2026-11-10T12:34:33.516059+00:00",
+  "outcome": "success",
+  "request": {
+    "method": "POST",
+    "url": "https://api.typesafe.ai/v1/systemone",
+    "headers": {
+      "Authorization": "Bearer ***REDACTED***",
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "model": "jev-latest",
+      "state": {
+        "catalog_context": "Supplier product catalog for industrial robotics and automation equipment",
+        "columns": [
+          {
+            "header": "Product Code",
+            "sample_values": [
+              "SB-2001",
+              "SB-2002",
+              "SB-2003"
+            ]
+          },
+          {
+            "header": "Item Label",
+            "sample_values": [
+              "Heavy-Duty Palletizing Robot",
+              "Compact SCARA Arm",
+              "Gantry Loader"
+            ]
+          },
+          {
+            "header": "Price",
+            "sample_values": [
+              "USD 48,500.00",
+              "CA$ 7,250.00",
+              "1.250,00 €"
+            ]
+          },
+          {
+            "header": "Line Total",
+            "sample_values": [
+              "USD 97,000.00",
+              "CA$ 14,500.00",
+              "2.500,00 €"
+            ]
+          },
+          {
+            "header": "Max Load",
+            "sample_values": [
+              "1,500 kg",
+              "6 kg",
+              "0,5 t"
+            ]
+          },
+          {
+            "header": "Arm Length",
+            "sample_values": [
+              "3,200 mm",
+              "600 mm",
+              "48\""
+            ]
+          },
+          {
+            "header": "Curr.",
+            "sample_values": [
+              "USD",
+              "EUR",
+              "GBP"
+            ]
+          },
+          {
+            "header": "Weight",
+            "sample_values": [
+              "2,850 kg",
+              "28 kg",
+              "410 kg"
+            ]
+          },
+          {
+            "header": "Warehouse Location",
+            "sample_values": [
+              "W1-A",
+              "W1-B",
+              "W2-A"
+            ]
+          }
+        ]
+      },
+      "questions": {
+        "map_col_0": {
+          "type": "choice",
+          "instructions": {
+            "column": {
+              "header": "Product Code",
+              "sample_values": [
+                "SB-2001",
+                "SB-2002",
+                "SB-2003"
+              ]
+            },
+            "question": "Which standard product field does the supplier spreadsheet column `column` hold?"
+          },
+          "criteria": {
+            "sku": "Unique product identifier, e.g. part number, product code, SKU or item code",
+            "name": "Human-readable product name, title or description",
+            "unit_price": "Price of ONE single unit (not an extended, line or order total)",
+            "currency": "Currency code or currency name that the prices are quoted in",
+            "payload_kg": "Payload or rated load: the mass the product can carry or lift",
+            "reach_m": "Reach: the maximum working distance or arm length",
+            "irrelevant": "None of the above, e.g. warranty, stock location, lead time, quantity or totals"
+          }
+        },
+        "map_col_1": {
+          "type": "choice",
+          "instructions": {
+            "column": {
+              "header": "Item Label",
+              "sample_values": [
+                "Heavy-Duty Palletizing Robot",
+                "Compact SCARA Arm",
+                "Gantry Loader"
+              ]
+            },
+            "question": "Which standard product field does the supplier spreadsheet column `column` hold?"
+          },
+          "criteria": {
+            "sku": "Unique product identifier, e.g. part number, product code, SKU or item code",
+            "name": "Human-readable product name, title or description",
+            "unit_price": "Price of ONE single unit (not an extended, line or order total)",
+            "currency": "Currency code or currency name that the prices are quoted in",
+            "payload_kg": "Payload or rated load: the mass the product can carry or lift",
+            "reach_m": "Reach: the maximum working distance or arm length",
+            "irrelevant": "None of the above, e.g. warranty, stock location, lead time, quantity or totals"
+          }
+        },
+        "map_col_2": {
+          "type": "choice",
+          "instructions": {
+            "column": {
+              "header": "Price",
+              "sample_values": [
+                "USD 48,500.00",
+                "CA$ 7,250.00",
+                "1.250,00 €"
+              ]
+            },
+            "question": "Which standard product field does the supplier spreadsheet column `column` hold?"
+          },
+          "criteria": {
+            "sku": "Unique product identifier, e.g. part number, product code, SKU or item code",
+            "name": "Human-readable product name, title or description",
+            "unit_price": "Price of ONE single unit (not an extended, line or order total)",
+            "currency": "Currency code or currency name that the prices are quoted in",
+            "payload_kg": "Payload or rated load: the mass the product can carry or lift",
+            "reach_m": "Reach: the maximum working distance or arm length",
+            "irrelevant": "None of the above, e.g. warranty, stock location, lead time, quantity or totals"
+          }
+        },
+        "map_col_3": {
+          "type": "choice",
+          "instructions": {
+            "column": {
+              "header": "Line Total",
+              "sample_values": [
+                "USD 97,000.00",
+                "CA$ 14,500.00",
+                "2.500,00 €"
+              ]
+            },
+            "question": "Which standard product field does the supplier spreadsheet column `column` hold?"
+          },
+          "criteria": {
+            "sku": "Unique product identifier, e.g. part number, product code, SKU or item code",
+            "name": "Human-readable product name, title or description",
+            "unit_price": "Price of ONE single unit (not an extended, line or order total)",
+            "currency": "Currency code or currency name that the prices are quoted in",
+            "payload_kg": "Payload or rated load: the mass the product can carry or lift",
+            "reach_m": "Reach: the maximum working distance or arm length",
+            "irrelevant": "None of the above, e.g. warranty, stock location, lead time, quantity or totals"
+          }
+        },
+        "map_col_4": {
+          "type": "choice",
+          "instructions": {
+            "column": {
+              "header": "Max Load",
+              "sample_values": [
+                "1,500 kg",
+                "6 kg",
+                "0,5 t"
+              ]
+            },
+            "question": "Which standard product field does the supplier spreadsheet column `column` hold?"
+          },
+          "criteria": {
+            "sku": "Unique product identifier, e.g. part number, product code, SKU or item code",
+            "name": "Human-readable product name, title or description",
+            "unit_price": "Price of ONE single unit (not an extended, line or order total)",
+            "currency": "Currency code or currency name that the prices are quoted in",
+            "payload_kg": "Payload or rated load: the mass the product can carry or lift",
+            "reach_m": "Reach: the maximum working distance or arm length",
+            "irrelevant": "None of the above, e.g. warranty, stock location, lead time, quantity or totals"
+          }
+        },
+        "map_col_5": {
+          "type": "choice",
+          "instructions": {
+            "column": {
+              "header": "Arm Length",
+              "sample_values": [
+                "3,200 mm",
+                "600 mm",
+                "48\""
+              ]
+            },
+            "question": "Which standard product field does the supplier spreadsheet column `column` hold?"
+          },
+          "criteria": {
+            "sku": "Unique product identifier, e.g. part number, product code, SKU or item code",
+            "name": "Human-readable product name, title or description",
+            "unit_price": "Price of ONE single unit (not an extended, line or order total)",
+            "currency": "Currency code or currency name that the prices are quoted in",
+            "payload_kg": "Payload or rated load: the mass the product can carry or lift",
+            "reach_m": "Reach: the maximum working distance or arm length",
+            "irrelevant": "None of the above, e.g. warranty, stock location, lead time, quantity or totals"
+          }
+        },
+        "map_col_6": {
+          "type": "choice",
+          "instructions": {
+            "column": {
+              "header": "Curr.",
+              "sample_values": [
+                "USD",
+                "EUR",
+                "GBP"
+              ]
+            },
+            "question": "Which standard product field does the supplier spreadsheet column `column` hold?"
+          },
+          "criteria": {
+            "sku": "Unique product identifier, e.g. part number, product code, SKU or item code",
+            "name": "Human-readable product name, title or description",
+            "unit_price": "Price of ONE single unit (not an extended, line or order total)",
+            "currency": "Currency code or currency name that the prices are quoted in",
+            "payload_kg": "Payload or rated load: the mass the product can carry or lift",
+            "reach_m": "Reach: the maximum working distance or arm length",
+            "irrelevant": "None of the above, e.g. warranty, stock location, lead time, quantity or totals"
+          }
+        },
+        "map_col_7": {
+          "type": "choice",
+          "instructions": {
+            "column": {
+              "header": "Weight",
+              "sample_values": [
+                "2,850 kg",
+                "28 kg",
+                "410 kg"
+              ]
+            },
+            "question": "Which standard product field does the supplier spreadsheet column `column` hold?"
+          },
+          "criteria": {
+            "sku": "Unique product identifier, e.g. part number, product code, SKU or item code",
+            "name": "Human-readable product name, title or description",
+            "unit_price": "Price of ONE single unit (not an extended, line or order total)",
+            "currency": "Currency code or currency name that the prices are quoted in",
+            "payload_kg": "Payload or rated load: the mass the product can carry or lift",
+            "reach_m": "Reach: the maximum working distance or arm length",
+            "irrelevant": "None of the above, e.g. warranty, stock location, lead time, quantity or totals"
+          }
+        },
+        "map_col_8": {
+          "type": "choice",
+          "instructions": {
+            "column": {
+              "header": "Warehouse Location",
+              "sample_values": [
+                "W1-A",
+                "W1-B",
+                "W2-A"
+              ]
+            },
+            "question": "Which standard product field does the supplier spreadsheet column `column` hold?"
+          },
+          "criteria": {
+            "sku": "Unique product identifier, e.g. part number, product code, SKU or item code",
+            "name": "Human-readable product name, title or description",
+            "unit_price": "Price of ONE single unit (not an extended, line or order total)",
+            "currency": "Currency code or currency name that the prices are quoted in",
+            "payload_kg": "Payload or rated load: the mass the product can carry or lift",
+            "reach_m": "Reach: the maximum working distance or arm length",
+            "irrelevant": "None of the above, e.g. warranty, stock location, lead time, quantity or totals"
+          }
+        }
+      }
+    }
+  },
+  "response": {
+    "status_code": 200,
+    "request_id": "req_01a1c573f802759981c301d0ecfa7394",
+    "duration_ms": 524,
+    "attempts": 1,
+    "body": {
+      "model": "jev-1.14.0",
+      "answers": {
+        "map_col_0": {
+          "type": "choice",
+          "choice": "sku",
+          "confidence": 1.0,
+          "probabilities": {
+            "sku": 1.0,
+            "name": 0.0,
+            "unit_price": 0.0,
+            "currency": 0.0,
+            "payload_kg": 0.0,
+            "reach_m": 0.0,
+            "irrelevant": 0.0
+          }
+        },
+        "map_col_1": {
+          "type": "choice",
+          "choice": "name",
+          "confidence": 1.0,
+          "probabilities": {
+            "sku": 0.0,
+            "name": 1.0,
+            "unit_price": 0.0,
+            "currency": 0.0,
+            "payload_kg": 0.0,
+            "reach_m": 0.0,
+            "irrelevant": 0.0
+          }
+        },
+        "map_col_2": {
+          "type": "choice",
+          "choice": "unit_price",
+          "confidence": 1.0,
+          "probabilities": {
+            "sku": 0.0,
+            "name": 0.0,
+            "unit_price": 1.0,
+            "currency": 0.0,
+            "payload_kg": 0.0,
+            "reach_m": 0.0,
+            "irrelevant": 0.0
+          }
+        },
+        "map_col_3": {
+          "type": "choice",
+          "choice": "irrelevant",
+          "confidence": 1.0,
+          "probabilities": {
+            "sku": 0.0,
+            "name": 0.0,
+            "unit_price": 0.0,
+            "currency": 0.0,
+            "payload_kg": 0.0,
+            "reach_m": 0.0,
+            "irrelevant": 1.0
+          }
+        },
+        "map_col_4": {
+          "type": "choice",
+          "choice": "payload_kg",
+          "confidence": 1.0,
+          "probabilities": {
+            "sku": 0.0,
+            "name": 0.0,
+            "unit_price": 0.0,
+            "currency": 0.0,
+            "payload_kg": 1.0,
+            "reach_m": 0.0,
+            "irrelevant": 0.0
+          }
+        },
+        "map_col_5": {
+          "type": "choice",
+          "choice": "reach_m",
+          "confidence": 1.0,
+          "probabilities": {
+            "sku": 0.0,
+            "name": 0.0,
+            "unit_price": 0.0,
+            "currency": 0.0,
+            "payload_kg": 0.0,
+            "reach_m": 1.0,
+            "irrelevant": 0.0
+          }
+        },
+        "map_col_6": {
+          "type": "choice",
+          "choice": "currency",
+          "confidence": 1.0,
+          "probabilities": {
+            "sku": 0.0,
+            "name": 0.0,
+            "unit_price": 0.0,
+            "currency": 1.0,
+            "payload_kg": 0.0,
+            "reach_m": 0.0,
+            "irrelevant": 0.0
+          }
+        },
+        "map_col_7": {
+          "type": "choice",
+          "choice": "irrelevant",
+          "confidence": 0.94,
+          "probabilities": {
+            "sku": 0.0,
+            "name": 0.0,
+            "unit_price": 0.0,
+            "currency": 0.0,
+            "payload_kg": 0.05,
+            "reach_m": 0.0,
+            "irrelevant": 0.95
+          }
+        },
+        "map_col_8": {
+          "type": "choice",
+          "choice": "irrelevant",
+          "confidence": 1.0,
+          "probabilities": {
+            "sku": 0.0,
+            "name": 0.0,
+            "unit_price": 0.0,
+            "currency": 0.0,
+            "payload_kg": 0.0,
+            "reach_m": 0.0,
+            "irrelevant": 1.0
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 2997,
+        "output_tokens": 661
+      }
+    }
+  },
+  "error": null
+}

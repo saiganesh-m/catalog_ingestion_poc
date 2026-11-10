@@ -1,0 +1,84 @@
+{
+  "captured_at": "2026-11-10T12:18:37.122631+00:00",
+  "outcome": "success",
+  "request": {
+    "method": "POST",
+    "url": "https://api.typesafe.ai/v1/systemone",
+    "headers": {
+      "Authorization": "Bearer ***REDACTED***",
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "model": "jev-latest",
+      "state": {
+        "catalog_context": "Supplier product catalog for industrial robotics and automation equipment",
+        "columns": [
+          {
+            "header": "Part Number",
+            "sample_values": [
+              "RB-1001",
+              "RB-1002"
+            ]
+          },
+          {
+            "header": "Unit Cost",
+            "sample_values": [
+              "$1,250.00",
+              "€ 2.450,50"
+            ]
+          },
+          {
+            "header": "Extended Amount",
+            "sample_values": [
+              "$6,250.00",
+              "€ 4.901,00"
+            ]
+          }
+        ]
+      },
+      "questions": {
+        "check_col_1": {
+          "type": "noul",
+          "instructions": {
+            "column": {
+              "header": "Unit Cost",
+              "sample_values": [
+                "$1,250.00",
+                "€ 2.450,50"
+              ]
+            },
+            "candidate_field": {
+              "name": "unit_price",
+              "meaning": "Price of ONE single unit (not an extended, line or order total)"
+            },
+            "question": "Does `column` hold `candidate_field`?"
+          },
+          "criteria": {
+            "true": "Yes - Price of ONE single unit (not an extended, line or order total)",
+            "false": "No - the column holds something else"
+          }
+        }
+      }
+    }
+  },
+  "response": {
+    "status_code": 200,
+    "request_id": "req_01a1c56560387bbdaae3d3afe1eab724",
+    "duration_ms": 364,
+    "attempts": 1,
+    "body": {
+      "model": "jev-1.14.0",
+      "answers": {
+        "check_col_1": {
+          "type": "noul",
+          "noul": 0.97
+        }
+      },
+      "usage": {
+        "input_tokens": 551,
+        "output_tokens": 23
+      }
+    }
+  },
+  "error": null
+}

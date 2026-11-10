@@ -1,0 +1,1305 @@
+[
+  {
+    "staging_id": 1,
+    "source": {
+      "filename": "sample_catalog.xlsx",
+      "sha256": "f9759c903db4567967e4ad2e8ba1600217fadcf0234f4ad41a78b1e0dd9b2038",
+      "sheet": "Supplier_Robotics_Catalog",
+      "row": 2,
+      "cells": {
+        "Part Number": "A2",
+        "Product Description": "B2",
+        "Unit Cost": "C2",
+        "Extended Amount": "D2",
+        "Rated Load": "E2",
+        "Working Reach": "F2",
+        "Currency": "G2",
+        "Warranty Duration": "H2"
+      }
+    },
+    "status": "ready",
+    "status_reason": null,
+    "validation_results": [],
+    "raw_data": {
+      "Part Number": "RB-1001",
+      "Product Description": "Articulated Robot Arm 6-Axis",
+      "Unit Cost": "$1,250.00",
+      "Extended Amount": "$6,250.00",
+      "Rated Load": "10 kg",
+      "Working Reach": "1500 mm",
+      "Currency": "USD",
+      "Warranty Duration": "24 Months"
+    },
+    "normalized_data": {
+      "sku": "RB-1001",
+      "name": "Articulated Robot Arm 6-Axis",
+      "unit_price": "1250.00",
+      "currency": "USD",
+      "payload_kg": 10.0,
+      "reach_m": 1.5
+    },
+    "normalization_notes": [
+      "Converted 1500.0 mm -> 1.5 m"
+    ],
+    "jev": {
+      "execution_mode": "LIVE (TypeSafe JEV API)",
+      "model": "jev-1.14.0",
+      "mappings": {
+        "Part Number": "sku",
+        "Product Description": "name",
+        "Unit Cost": "unit_price",
+        "Extended Amount": "irrelevant",
+        "Rated Load": "payload_kg",
+        "Working Reach": "reach_m",
+        "Currency": "currency",
+        "Warranty Duration": "irrelevant"
+      }
+    }
+  },
+  {
+    "staging_id": 2,
+    "source": {
+      "filename": "sample_catalog.xlsx",
+      "sha256": "f9759c903db4567967e4ad2e8ba1600217fadcf0234f4ad41a78b1e0dd9b2038",
+      "sheet": "Supplier_Robotics_Catalog",
+      "row": 3,
+      "cells": {
+        "Part Number": "A3",
+        "Product Description": "B3",
+        "Unit Cost": "C3",
+        "Extended Amount": "D3",
+        "Rated Load": "E3",
+        "Working Reach": "F3",
+        "Currency": "G3",
+        "Warranty Duration": "H3"
+      }
+    },
+    "status": "ready",
+    "status_reason": null,
+    "validation_results": [],
+    "raw_data": {
+      "Part Number": "RB-1002",
+      "Product Description": "SCARA High-Speed Assembly Arm",
+      "Unit Cost": "€ 2.450,50",
+      "Extended Amount": "€ 4.901,00",
+      "Rated Load": "5 kg",
+      "Working Reach": "800 mm",
+      "Currency": "EUR",
+      "Warranty Duration": "12 Months"
+    },
+    "normalized_data": {
+      "sku": "RB-1002",
+      "name": "SCARA High-Speed Assembly Arm",
+      "unit_price": "2450.50",
+      "currency": "EUR",
+      "payload_kg": 5.0,
+      "reach_m": 0.8
+    },
+    "normalization_notes": [
+      "Converted 800.0 mm -> 0.8 m"
+    ],
+    "jev": {
+      "execution_mode": "LIVE (TypeSafe JEV API)",
+      "model": "jev-1.14.0",
+      "mappings": {
+        "Part Number": "sku",
+        "Product Description": "name",
+        "Unit Cost": "unit_price",
+        "Extended Amount": "irrelevant",
+        "Rated Load": "payload_kg",
+        "Working Reach": "reach_m",
+        "Currency": "currency",
+        "Warranty Duration": "irrelevant"
+      }
+    }
+  },
+  {
+    "staging_id": 3,
+    "source": {
+      "filename": "sample_catalog.xlsx",
+      "sha256": "f9759c903db4567967e4ad2e8ba1600217fadcf0234f4ad41a78b1e0dd9b2038",
+      "sheet": "Supplier_Robotics_Catalog",
+      "row": 4,
+      "cells": {
+        "Part Number": "A4",
+        "Product Description": "B4",
+        "Unit Cost": "C4",
+        "Extended Amount": "D4",
+        "Rated Load": "E4",
+        "Working Reach": "F4",
+        "Currency": "G4",
+        "Warranty Duration": "H4"
+      }
+    },
+    "status": "ready",
+    "status_reason": null,
+    "validation_results": [],
+    "raw_data": {
+      "Part Number": "RB-1003",
+      "Product Description": "Micro-Delta Precision Sorter",
+      "Unit Cost": "£ 850.00",
+      "Extended Amount": "£ 1,700.00",
+      "Rated Load": "500 g",
+      "Working Reach": "1.2 m",
+      "Currency": "GBP",
+      "Warranty Duration": "36 Months"
+    },
+    "normalized_data": {
+      "sku": "RB-1003",
+      "name": "Micro-Delta Precision Sorter",
+      "unit_price": "850.00",
+      "currency": "GBP",
+      "payload_kg": 0.5,
+      "reach_m": 1.2
+    },
+    "normalization_notes": [
+      "Converted 500.0 g -> 0.5 kg"
+    ],
+    "jev": {
+      "execution_mode": "LIVE (TypeSafe JEV API)",
+      "model": "jev-1.14.0",
+      "mappings": {
+        "Part Number": "sku",
+        "Product Description": "name",
+        "Unit Cost": "unit_price",
+        "Extended Amount": "irrelevant",
+        "Rated Load": "payload_kg",
+        "Working Reach": "reach_m",
+        "Currency": "currency",
+        "Warranty Duration": "irrelevant"
+      }
+    }
+  },
+  {
+    "staging_id": 4,
+    "source": {
+      "filename": "sample_catalog.xlsx",
+      "sha256": "f9759c903db4567967e4ad2e8ba1600217fadcf0234f4ad41a78b1e0dd9b2038",
+      "sheet": "Supplier_Robotics_Catalog",
+      "row": 5,
+      "cells": {
+        "Part Number": "A5",
+        "Product Description": "B5",
+        "Unit Cost": "C5",
+        "Extended Amount": "D5",
+        "Rated Load": "E5",
+        "Working Reach": "F5",
+        "Currency": "G5",
+        "Warranty Duration": "H5"
+      }
+    },
+    "status": "ready",
+    "status_reason": null,
+    "validation_results": [],
+    "raw_data": {
+      "Part Number": "RB-1004",
+      "Product Description": "Heavy Industrial Palletizer",
+      "Unit Cost": "$8,900.00",
+      "Extended Amount": "$8,900.00",
+      "Rated Load": "50 lbs",
+      "Working Reach": "78 in",
+      "Currency": "USD",
+      "Warranty Duration": "5 Years"
+    },
+    "normalized_data": {
+      "sku": "RB-1004",
+      "name": "Heavy Industrial Palletizer",
+      "unit_price": "8900.00",
+      "currency": "USD",
+      "payload_kg": 22.68,
+      "reach_m": 1.981
+    },
+    "normalization_notes": [
+      "Converted 50.0 lbs -> 22.68 kg",
+      "Converted 78.0 in -> 1.981 m"
+    ],
+    "jev": {
+      "execution_mode": "LIVE (TypeSafe JEV API)",
+      "model": "jev-1.14.0",
+      "mappings": {
+        "Part Number": "sku",
+        "Product Description": "name",
+        "Unit Cost": "unit_price",
+        "Extended Amount": "irrelevant",
+        "Rated Load": "payload_kg",
+        "Working Reach": "reach_m",
+        "Currency": "currency",
+        "Warranty Duration": "irrelevant"
+      }
+    }
+  },
+  {
+    "staging_id": 5,
+    "source": {
+      "filename": "sample_catalog.xlsx",
+      "sha256": "f9759c903db4567967e4ad2e8ba1600217fadcf0234f4ad41a78b1e0dd9b2038",
+      "sheet": "Supplier_Robotics_Catalog",
+      "row": 6,
+      "cells": {
+        "Part Number": "A6",
+        "Product Description": "B6",
+        "Unit Cost": "C6",
+        "Extended Amount": "D6",
+        "Rated Load": "E6",
+        "Working Reach": "F6",
+        "Currency": "G6",
+        "Warranty Duration": "H6"
+      }
+    },
+    "status": "ready",
+    "status_reason": null,
+    "validation_results": [],
+    "raw_data": {
+      "Part Number": "RB-1005",
+      "Product Description": "Pick-and-Place Cartesian Sorter",
+      "Unit Cost": "₹ 1,85,000.00",
+      "Extended Amount": "₹ 1,85,000.00",
+      "Rated Load": "8 kg",
+      "Working Reach": "1100 mm",
+      "Currency": "INR",
+      "Warranty Duration": "18 Months"
+    },
+    "normalized_data": {
+      "sku": "RB-1005",
+      "name": "Pick-and-Place Cartesian Sorter",
+      "unit_price": "185000.00",
+      "currency": "INR",
+      "payload_kg": 8.0,
+      "reach_m": 1.1
+    },
+    "normalization_notes": [
+      "Converted 1100.0 mm -> 1.1 m"
+    ],
+    "jev": {
+      "execution_mode": "LIVE (TypeSafe JEV API)",
+      "model": "jev-1.14.0",
+      "mappings": {
+        "Part Number": "sku",
+        "Product Description": "name",
+        "Unit Cost": "unit_price",
+        "Extended Amount": "irrelevant",
+        "Rated Load": "payload_kg",
+        "Working Reach": "reach_m",
+        "Currency": "currency",
+        "Warranty Duration": "irrelevant"
+      }
+    }
+  },
+  {
+    "staging_id": 6,
+    "source": {
+      "filename": "sample_catalog.xlsx",
+      "sha256": "f9759c903db4567967e4ad2e8ba1600217fadcf0234f4ad41a78b1e0dd9b2038",
+      "sheet": "Supplier_Robotics_Catalog",
+      "row": 7,
+      "cells": {
+        "Part Number": "A7",
+        "Product Description": "B7",
+        "Unit Cost": "C7",
+        "Extended Amount": "D7",
+        "Rated Load": "E7",
+        "Working Reach": "F7",
+        "Currency": "G7",
+        "Warranty Duration": "H7"
+      }
+    },
+    "status": "rejected",
+    "status_reason": "Missing required product identifier: sku",
+    "validation_results": [
+      "Missing required product identifier: sku"
+    ],
+    "raw_data": {
+      "Part Number": null,
+      "Product Description": "Gantry Cartesian Linear Unit",
+      "Unit Cost": "$3,100.00",
+      "Extended Amount": "$3,100.00",
+      "Rated Load": "20 kg",
+      "Working Reach": "2000 mm",
+      "Currency": "USD",
+      "Warranty Duration": "12 Months"
+    },
+    "normalized_data": {
+      "sku": null,
+      "name": "Gantry Cartesian Linear Unit",
+      "unit_price": "3100.00",
+      "currency": "USD",
+      "payload_kg": 20.0,
+      "reach_m": 2.0
+    },
+    "normalization_notes": [
+      "Converted 2000.0 mm -> 2.0 m"
+    ],
+    "jev": {
+      "execution_mode": "LIVE (TypeSafe JEV API)",
+      "model": "jev-1.14.0",
+      "mappings": {
+        "Part Number": "sku",
+        "Product Description": "name",
+        "Unit Cost": "unit_price",
+        "Extended Amount": "irrelevant",
+        "Rated Load": "payload_kg",
+        "Working Reach": "reach_m",
+        "Currency": "currency",
+        "Warranty Duration": "irrelevant"
+      }
+    }
+  },
+  {
+    "staging_id": 7,
+    "source": {
+      "filename": "sample_catalog.xlsx",
+      "sha256": "f9759c903db4567967e4ad2e8ba1600217fadcf0234f4ad41a78b1e0dd9b2038",
+      "sheet": "Supplier_Robotics_Catalog",
+      "row": 8,
+      "cells": {
+        "Part Number": "A8",
+        "Product Description": "B8",
+        "Unit Cost": "C8",
+        "Extended Amount": "D8",
+        "Rated Load": "E8",
+        "Working Reach": "F8",
+        "Currency": "G8",
+        "Warranty Duration": "H8"
+      }
+    },
+    "status": "rejected",
+    "status_reason": "Missing required product name",
+    "validation_results": [
+      "Missing required product name"
+    ],
+    "raw_data": {
+      "Part Number": "RB-1006",
+      "Product Description": null,
+      "Unit Cost": "$1,500.00",
+      "Extended Amount": "$1,500.00",
+      "Rated Load": "15 kg",
+      "Working Reach": "1100 mm",
+      "Currency": "USD",
+      "Warranty Duration": "12 Months"
+    },
+    "normalized_data": {
+      "sku": "RB-1006",
+      "name": null,
+      "unit_price": "1500.00",
+      "currency": "USD",
+      "payload_kg": 15.0,
+      "reach_m": 1.1
+    },
+    "normalization_notes": [
+      "Converted 1100.0 mm -> 1.1 m"
+    ],
+    "jev": {
+      "execution_mode": "LIVE (TypeSafe JEV API)",
+      "model": "jev-1.14.0",
+      "mappings": {
+        "Part Number": "sku",
+        "Product Description": "name",
+        "Unit Cost": "unit_price",
+        "Extended Amount": "irrelevant",
+        "Rated Load": "payload_kg",
+        "Working Reach": "reach_m",
+        "Currency": "currency",
+        "Warranty Duration": "irrelevant"
+      }
+    }
+  },
+  {
+    "staging_id": 8,
+    "source": {
+      "filename": "sample_catalog.xlsx",
+      "sha256": "f9759c903db4567967e4ad2e8ba1600217fadcf0234f4ad41a78b1e0dd9b2038",
+      "sheet": "Supplier_Robotics_Catalog",
+      "row": 9,
+      "cells": {
+        "Part Number": "A9",
+        "Product Description": "B9",
+        "Unit Cost": "C9",
+        "Extended Amount": "D9",
+        "Rated Load": "E9",
+        "Working Reach": "F9",
+        "Currency": "G9",
+        "Warranty Duration": "H9"
+      }
+    },
+    "status": "rejected",
+    "status_reason": "Invalid numeric price format: 'N/A'",
+    "validation_results": [
+      "Invalid numeric price format: 'N/A'"
+    ],
+    "raw_data": {
+      "Part Number": "RB-1007",
+      "Product Description": "Cobot Collaborative Welder",
+      "Unit Cost": "N/A",
+      "Extended Amount": "TBD",
+      "Rated Load": "12 kg",
+      "Working Reach": "1300 mm",
+      "Currency": "USD",
+      "Warranty Duration": "24 Months"
+    },
+    "normalized_data": {
+      "sku": "RB-1007",
+      "name": "Cobot Collaborative Welder",
+      "unit_price": null,
+      "currency": "USD",
+      "payload_kg": 12.0,
+      "reach_m": 1.3
+    },
+    "normalization_notes": [
+      "Converted 1300.0 mm -> 1.3 m"
+    ],
+    "jev": {
+      "execution_mode": "LIVE (TypeSafe JEV API)",
+      "model": "jev-1.14.0",
+      "mappings": {
+        "Part Number": "sku",
+        "Product Description": "name",
+        "Unit Cost": "unit_price",
+        "Extended Amount": "irrelevant",
+        "Rated Load": "payload_kg",
+        "Working Reach": "reach_m",
+        "Currency": "currency",
+        "Warranty Duration": "irrelevant"
+      }
+    }
+  },
+  {
+    "staging_id": 9,
+    "source": {
+      "filename": "sample_catalog.xlsx",
+      "sha256": "f9759c903db4567967e4ad2e8ba1600217fadcf0234f4ad41a78b1e0dd9b2038",
+      "sheet": "Supplier_Robotics_Catalog",
+      "row": 10,
+      "cells": {
+        "Part Number": "A10",
+        "Product Description": "B10",
+        "Unit Cost": "C10",
+        "Extended Amount": "D10",
+        "Rated Load": "E10",
+        "Working Reach": "F10",
+        "Currency": "G10",
+        "Warranty Duration": "H10"
+      }
+    },
+    "status": "rejected",
+    "status_reason": "Price cannot be negative: -450.00",
+    "validation_results": [
+      "Price cannot be negative: -450.00"
+    ],
+    "raw_data": {
+      "Part Number": "RB-1008",
+      "Product Description": "Laser Inspection Module",
+      "Unit Cost": "-$450.00",
+      "Extended Amount": "-$450.00",
+      "Rated Load": "2 kg",
+      "Working Reach": "500 mm",
+      "Currency": "USD",
+      "Warranty Duration": "6 Months"
+    },
+    "normalized_data": {
+      "sku": "RB-1008",
+      "name": "Laser Inspection Module",
+      "unit_price": "-450.00",
+      "currency": "USD",
+      "payload_kg": 2.0,
+      "reach_m": 0.5
+    },
+    "normalization_notes": [
+      "Converted 500.0 mm -> 0.5 m"
+    ],
+    "jev": {
+      "execution_mode": "LIVE (TypeSafe JEV API)",
+      "model": "jev-1.14.0",
+      "mappings": {
+        "Part Number": "sku",
+        "Product Description": "name",
+        "Unit Cost": "unit_price",
+        "Extended Amount": "irrelevant",
+        "Rated Load": "payload_kg",
+        "Working Reach": "reach_m",
+        "Currency": "currency",
+        "Warranty Duration": "irrelevant"
+      }
+    }
+  },
+  {
+    "staging_id": 10,
+    "source": {
+      "filename": "sample_catalog.xlsx",
+      "sha256": "f9759c903db4567967e4ad2e8ba1600217fadcf0234f4ad41a78b1e0dd9b2038",
+      "sheet": "Supplier_Robotics_Catalog",
+      "row": 11,
+      "cells": {
+        "Part Number": "A11",
+        "Product Description": "B11",
+        "Unit Cost": "C11",
+        "Extended Amount": "D11",
+        "Rated Load": "E11",
+        "Working Reach": "F11",
+        "Currency": "G11",
+        "Warranty Duration": "H11"
+      }
+    },
+    "status": "needs_review",
+    "status_reason": "Ambiguous currency symbol '$' without an explicit currency column (could be USD, CAD, AUD, SGD)",
+    "validation_results": [
+      "Ambiguous currency symbol '$' without an explicit currency column (could be USD, CAD, AUD, SGD)"
+    ],
+    "raw_data": {
+      "Part Number": "RB-1009",
+      "Product Description": "Cleanroom Pick and Place Robot",
+      "Unit Cost": "$ 720.00",
+      "Extended Amount": "$ 720.00",
+      "Rated Load": "3 kg",
+      "Working Reach": "650 mm",
+      "Currency": null,
+      "Warranty Duration": "12 Months"
+    },
+    "normalized_data": {
+      "sku": "RB-1009",
+      "name": "Cleanroom Pick and Place Robot",
+      "unit_price": "720.00",
+      "currency": null,
+      "payload_kg": 3.0,
+      "reach_m": 0.65
+    },
+    "normalization_notes": [
+      "Converted 650.0 mm -> 0.65 m"
+    ],
+    "jev": {
+      "execution_mode": "LIVE (TypeSafe JEV API)",
+      "model": "jev-1.14.0",
+      "mappings": {
+        "Part Number": "sku",
+        "Product Description": "name",
+        "Unit Cost": "unit_price",
+        "Extended Amount": "irrelevant",
+        "Rated Load": "payload_kg",
+        "Working Reach": "reach_m",
+        "Currency": "currency",
+        "Warranty Duration": "irrelevant"
+      }
+    }
+  },
+  {
+    "staging_id": 11,
+    "source": {
+      "filename": "sample_catalog.xlsx",
+      "sha256": "f9759c903db4567967e4ad2e8ba1600217fadcf0234f4ad41a78b1e0dd9b2038",
+      "sheet": "Supplier_Robotics_Catalog",
+      "row": 12,
+      "cells": {
+        "Part Number": "A12",
+        "Product Description": "B12",
+        "Unit Cost": "C12",
+        "Extended Amount": "D12",
+        "Rated Load": "E12",
+        "Working Reach": "F12",
+        "Currency": "G12",
+        "Warranty Duration": "H12"
+      }
+    },
+    "status": "ready",
+    "status_reason": null,
+    "validation_results": [],
+    "raw_data": {
+      "Part Number": "RB-1010",
+      "Product Description": "Modular Servo Actuator",
+      "Unit Cost": "$180.00",
+      "Extended Amount": "$1,800.00",
+      "Rated Load": "1.5 kg",
+      "Working Reach": "300 mm",
+      "Currency": "USD",
+      "Warranty Duration": "12 Months"
+    },
+    "normalized_data": {
+      "sku": "RB-1010",
+      "name": "Modular Servo Actuator",
+      "unit_price": "180.00",
+      "currency": "USD",
+      "payload_kg": 1.5,
+      "reach_m": 0.3
+    },
+    "normalization_notes": [
+      "Converted 300.0 mm -> 0.3 m"
+    ],
+    "jev": {
+      "execution_mode": "LIVE (TypeSafe JEV API)",
+      "model": "jev-1.14.0",
+      "mappings": {
+        "Part Number": "sku",
+        "Product Description": "name",
+        "Unit Cost": "unit_price",
+        "Extended Amount": "irrelevant",
+        "Rated Load": "payload_kg",
+        "Working Reach": "reach_m",
+        "Currency": "currency",
+        "Warranty Duration": "irrelevant"
+      }
+    }
+  },
+  {
+    "staging_id": 12,
+    "source": {
+      "filename": "sample_catalog.xlsx",
+      "sha256": "f9759c903db4567967e4ad2e8ba1600217fadcf0234f4ad41a78b1e0dd9b2038",
+      "sheet": "Supplier_Robotics_Catalog",
+      "row": 13,
+      "cells": {
+        "Part Number": "A13",
+        "Product Description": "B13",
+        "Unit Cost": "C13",
+        "Extended Amount": "D13",
+        "Rated Load": "E13",
+        "Working Reach": "F13",
+        "Currency": "G13",
+        "Warranty Duration": "H13"
+      }
+    },
+    "status": "needs_review",
+    "status_reason": "Duplicate SKU 'RB-1001' detected within catalog (first encountered at Excel Row 2) | SKU 'RB-1001' is already an approved product with different values: name Articulated Robot Arm 6-Axis -> Articulated Robot Arm 6-Axis (Duplicate)",
+    "validation_results": [
+      "Duplicate SKU 'RB-1001' detected within catalog (first encountered at Excel Row 2)",
+      "SKU 'RB-1001' is already an approved product with different values: name Articulated Robot Arm 6-Axis -> Articulated Robot Arm 6-Axis (Duplicate)"
+    ],
+    "raw_data": {
+      "Part Number": "RB-1001",
+      "Product Description": "Articulated Robot Arm 6-Axis (Duplicate)",
+      "Unit Cost": "$1,250.00",
+      "Extended Amount": "$1,250.00",
+      "Rated Load": "10 kg",
+      "Working Reach": "1500 mm",
+      "Currency": "USD",
+      "Warranty Duration": "24 Months"
+    },
+    "normalized_data": {
+      "sku": "RB-1001",
+      "name": "Articulated Robot Arm 6-Axis (Duplicate)",
+      "unit_price": "1250.00",
+      "currency": "USD",
+      "payload_kg": 10.0,
+      "reach_m": 1.5
+    },
+    "normalization_notes": [
+      "Converted 1500.0 mm -> 1.5 m"
+    ],
+    "jev": {
+      "execution_mode": "LIVE (TypeSafe JEV API)",
+      "model": "jev-1.14.0",
+      "mappings": {
+        "Part Number": "sku",
+        "Product Description": "name",
+        "Unit Cost": "unit_price",
+        "Extended Amount": "irrelevant",
+        "Rated Load": "payload_kg",
+        "Working Reach": "reach_m",
+        "Currency": "currency",
+        "Warranty Duration": "irrelevant"
+      }
+    }
+  },
+  {
+    "staging_id": 13,
+    "source": {
+      "filename": "sample_catalog.xlsx",
+      "sha256": "f9759c903db4567967e4ad2e8ba1600217fadcf0234f4ad41a78b1e0dd9b2038",
+      "sheet": "Supplier_Robotics_Catalog",
+      "row": 14,
+      "cells": {
+        "Part Number": "A14",
+        "Product Description": "B14",
+        "Unit Cost": "C14",
+        "Extended Amount": "D14",
+        "Rated Load": "E14",
+        "Working Reach": "F14",
+        "Currency": "G14",
+        "Warranty Duration": "H14"
+      }
+    },
+    "status": "ready",
+    "status_reason": null,
+    "validation_results": [],
+    "raw_data": {
+      "Part Number": "RB-1012",
+      "Product Description": "Controller Cabinet Master Unit",
+      "Unit Cost": "$4,200.00",
+      "Extended Amount": "$4,200.00",
+      "Rated Load": null,
+      "Working Reach": null,
+      "Currency": "USD",
+      "Warranty Duration": "36 Months"
+    },
+    "normalized_data": {
+      "sku": "RB-1012",
+      "name": "Controller Cabinet Master Unit",
+      "unit_price": "4200.00",
+      "currency": "USD",
+      "payload_kg": null,
+      "reach_m": null
+    },
+    "normalization_notes": [],
+    "jev": {
+      "execution_mode": "LIVE (TypeSafe JEV API)",
+      "model": "jev-1.14.0",
+      "mappings": {
+        "Part Number": "sku",
+        "Product Description": "name",
+        "Unit Cost": "unit_price",
+        "Extended Amount": "irrelevant",
+        "Rated Load": "payload_kg",
+        "Working Reach": "reach_m",
+        "Currency": "currency",
+        "Warranty Duration": "irrelevant"
+      }
+    }
+  },
+  {
+    "staging_id": 14,
+    "source": {
+      "filename": "sample_catalog_supplier_b.xlsx",
+      "sha256": "ab2c1f5710bd9e16f81da7742ddae954a6cf48142c74eac11ddadc9be92d4f20",
+      "sheet": "Supplier_B_Price_List",
+      "row": 2,
+      "cells": {
+        "Product Code": "A2",
+        "Item Label": "B2",
+        "Price": "C2",
+        "Line Total": "D2",
+        "Max Load": "E2",
+        "Arm Length": "F2",
+        "Curr.": "G2",
+        "Weight": "H2",
+        "Warehouse Location": "I2"
+      }
+    },
+    "status": "ready",
+    "status_reason": null,
+    "validation_results": [],
+    "raw_data": {
+      "Product Code": "SB-2001",
+      "Item Label": "Heavy-Duty Palletizing Robot",
+      "Price": "USD 48,500.00",
+      "Line Total": "USD 97,000.00",
+      "Max Load": "1,500 kg",
+      "Arm Length": "3,200 mm",
+      "Curr.": "USD",
+      "Weight": "2,850 kg",
+      "Warehouse Location": "W1-A"
+    },
+    "normalized_data": {
+      "sku": "SB-2001",
+      "name": "Heavy-Duty Palletizing Robot",
+      "unit_price": "48500.00",
+      "currency": "USD",
+      "payload_kg": 1500.0,
+      "reach_m": 3.2
+    },
+    "normalization_notes": [
+      "Converted 3200.0 mm -> 3.2 m"
+    ],
+    "jev": {
+      "execution_mode": "LIVE (TypeSafe JEV API)",
+      "model": "jev-1.14.0",
+      "mappings": {
+        "Product Code": "sku",
+        "Item Label": "name",
+        "Price": "unit_price",
+        "Line Total": "irrelevant",
+        "Max Load": "payload_kg",
+        "Arm Length": "reach_m",
+        "Curr.": "currency",
+        "Weight": "irrelevant",
+        "Warehouse Location": "irrelevant"
+      }
+    }
+  },
+  {
+    "staging_id": 15,
+    "source": {
+      "filename": "sample_catalog_supplier_b.xlsx",
+      "sha256": "ab2c1f5710bd9e16f81da7742ddae954a6cf48142c74eac11ddadc9be92d4f20",
+      "sheet": "Supplier_B_Price_List",
+      "row": 3,
+      "cells": {
+        "Product Code": "A3",
+        "Item Label": "B3",
+        "Price": "C3",
+        "Line Total": "D3",
+        "Max Load": "E3",
+        "Arm Length": "F3",
+        "Curr.": "G3",
+        "Weight": "H3",
+        "Warehouse Location": "I3"
+      }
+    },
+    "status": "ready",
+    "status_reason": null,
+    "validation_results": [],
+    "raw_data": {
+      "Product Code": "SB-2002",
+      "Item Label": "Compact SCARA Arm",
+      "Price": "CA$ 7,250.00",
+      "Line Total": "CA$ 14,500.00",
+      "Max Load": "6 kg",
+      "Arm Length": "600 mm",
+      "Curr.": null,
+      "Weight": "28 kg",
+      "Warehouse Location": "W1-B"
+    },
+    "normalized_data": {
+      "sku": "SB-2002",
+      "name": "Compact SCARA Arm",
+      "unit_price": "7250.00",
+      "currency": "CAD",
+      "payload_kg": 6.0,
+      "reach_m": 0.6
+    },
+    "normalization_notes": [
+      "Converted 600.0 mm -> 0.6 m"
+    ],
+    "jev": {
+      "execution_mode": "LIVE (TypeSafe JEV API)",
+      "model": "jev-1.14.0",
+      "mappings": {
+        "Product Code": "sku",
+        "Item Label": "name",
+        "Price": "unit_price",
+        "Line Total": "irrelevant",
+        "Max Load": "payload_kg",
+        "Arm Length": "reach_m",
+        "Curr.": "currency",
+        "Weight": "irrelevant",
+        "Warehouse Location": "irrelevant"
+      }
+    }
+  },
+  {
+    "staging_id": 16,
+    "source": {
+      "filename": "sample_catalog_supplier_b.xlsx",
+      "sha256": "ab2c1f5710bd9e16f81da7742ddae954a6cf48142c74eac11ddadc9be92d4f20",
+      "sheet": "Supplier_B_Price_List",
+      "row": 4,
+      "cells": {
+        "Product Code": "A4",
+        "Item Label": "B4",
+        "Price": "C4",
+        "Line Total": "D4",
+        "Max Load": "E4",
+        "Arm Length": "F4",
+        "Curr.": "G4",
+        "Weight": "H4",
+        "Warehouse Location": "I4"
+      }
+    },
+    "status": "ready",
+    "status_reason": null,
+    "validation_results": [],
+    "raw_data": {
+      "Product Code": "SB-2003",
+      "Item Label": "Gantry Loader",
+      "Price": "1.250,00 €",
+      "Line Total": "2.500,00 €",
+      "Max Load": "0,5 t",
+      "Arm Length": "48\"",
+      "Curr.": "EUR",
+      "Weight": "410 kg",
+      "Warehouse Location": "W2-A"
+    },
+    "normalized_data": {
+      "sku": "SB-2003",
+      "name": "Gantry Loader",
+      "unit_price": "1250.00",
+      "currency": "EUR",
+      "payload_kg": 500.0,
+      "reach_m": 1.219
+    },
+    "normalization_notes": [
+      "Converted 0.5 t -> 500.0 kg",
+      "Converted 48.0 \" -> 1.219 m"
+    ],
+    "jev": {
+      "execution_mode": "LIVE (TypeSafe JEV API)",
+      "model": "jev-1.14.0",
+      "mappings": {
+        "Product Code": "sku",
+        "Item Label": "name",
+        "Price": "unit_price",
+        "Line Total": "irrelevant",
+        "Max Load": "payload_kg",
+        "Arm Length": "reach_m",
+        "Curr.": "currency",
+        "Weight": "irrelevant",
+        "Warehouse Location": "irrelevant"
+      }
+    }
+  },
+  {
+    "staging_id": 17,
+    "source": {
+      "filename": "sample_catalog_supplier_b.xlsx",
+      "sha256": "ab2c1f5710bd9e16f81da7742ddae954a6cf48142c74eac11ddadc9be92d4f20",
+      "sheet": "Supplier_B_Price_List",
+      "row": 5,
+      "cells": {
+        "Product Code": "A5",
+        "Item Label": "B5",
+        "Price": "C5",
+        "Line Total": "D5",
+        "Max Load": "E5",
+        "Arm Length": "F5",
+        "Curr.": "G5",
+        "Weight": "H5",
+        "Warehouse Location": "I5"
+      }
+    },
+    "status": "needs_review",
+    "status_reason": "Currency conflict: the price shows '€' but the currency column says 'USD' | Could not read payload value 'N/A' (expected a number with a unit, e.g. '10 kg')",
+    "validation_results": [
+      "Currency conflict: the price shows '€' but the currency column says 'USD'",
+      "Could not read payload value 'N/A' (expected a number with a unit, e.g. '10 kg')"
+    ],
+    "raw_data": {
+      "Product Code": "SB-2004",
+      "Item Label": "Vision Inspection Cell",
+      "Price": "€ 3,900.00",
+      "Line Total": "€ 3,900.00",
+      "Max Load": "N/A",
+      "Arm Length": "1.1 m",
+      "Curr.": "USD",
+      "Weight": "95 kg",
+      "Warehouse Location": "W2-B"
+    },
+    "normalized_data": {
+      "sku": "SB-2004",
+      "name": "Vision Inspection Cell",
+      "unit_price": "3900.00",
+      "currency": "USD",
+      "payload_kg": null,
+      "reach_m": 1.1
+    },
+    "normalization_notes": [],
+    "jev": {
+      "execution_mode": "LIVE (TypeSafe JEV API)",
+      "model": "jev-1.14.0",
+      "mappings": {
+        "Product Code": "sku",
+        "Item Label": "name",
+        "Price": "unit_price",
+        "Line Total": "irrelevant",
+        "Max Load": "payload_kg",
+        "Arm Length": "reach_m",
+        "Curr.": "currency",
+        "Weight": "irrelevant",
+        "Warehouse Location": "irrelevant"
+      }
+    }
+  },
+  {
+    "staging_id": 18,
+    "source": {
+      "filename": "sample_catalog_supplier_b.xlsx",
+      "sha256": "ab2c1f5710bd9e16f81da7742ddae954a6cf48142c74eac11ddadc9be92d4f20",
+      "sheet": "Supplier_B_Price_List",
+      "row": 6,
+      "cells": {
+        "Product Code": "A6",
+        "Item Label": "B6",
+        "Price": "C6",
+        "Line Total": "D6",
+        "Max Load": "E6",
+        "Arm Length": "F6",
+        "Curr.": "G6",
+        "Weight": "H6",
+        "Warehouse Location": "I6"
+      }
+    },
+    "status": "needs_review",
+    "status_reason": "Ambiguous currency symbol '¥' without an explicit currency column (could be JPY, CNY)",
+    "validation_results": [
+      "Ambiguous currency symbol '¥' without an explicit currency column (could be JPY, CNY)"
+    ],
+    "raw_data": {
+      "Product Code": "SB-2005",
+      "Item Label": "Pallet Conveyor Robot",
+      "Price": "¥ 1,200,000",
+      "Line Total": "¥ 2,400,000",
+      "Max Load": "25 kg",
+      "Arm Length": "1800 mm",
+      "Curr.": null,
+      "Weight": "150 kg",
+      "Warehouse Location": "W3-A"
+    },
+    "normalized_data": {
+      "sku": "SB-2005",
+      "name": "Pallet Conveyor Robot",
+      "unit_price": "1200000",
+      "currency": null,
+      "payload_kg": 25.0,
+      "reach_m": 1.8
+    },
+    "normalization_notes": [
+      "Converted 1800.0 mm -> 1.8 m"
+    ],
+    "jev": {
+      "execution_mode": "LIVE (TypeSafe JEV API)",
+      "model": "jev-1.14.0",
+      "mappings": {
+        "Product Code": "sku",
+        "Item Label": "name",
+        "Price": "unit_price",
+        "Line Total": "irrelevant",
+        "Max Load": "payload_kg",
+        "Arm Length": "reach_m",
+        "Curr.": "currency",
+        "Weight": "irrelevant",
+        "Warehouse Location": "irrelevant"
+      }
+    }
+  },
+  {
+    "staging_id": 19,
+    "source": {
+      "filename": "sample_catalog_supplier_b.xlsx",
+      "sha256": "ab2c1f5710bd9e16f81da7742ddae954a6cf48142c74eac11ddadc9be92d4f20",
+      "sheet": "Supplier_B_Price_List",
+      "row": 7,
+      "cells": {
+        "Product Code": "A7",
+        "Item Label": "B7",
+        "Price": "C7",
+        "Line Total": "D7",
+        "Max Load": "E7",
+        "Arm Length": "F7",
+        "Curr.": "G7",
+        "Weight": "H7",
+        "Warehouse Location": "I7"
+      }
+    },
+    "status": "rejected",
+    "status_reason": "Invalid numeric price format: 'approx. 1250' (not a plain number)",
+    "validation_results": [
+      "Invalid numeric price format: 'approx. 1250' (not a plain number)"
+    ],
+    "raw_data": {
+      "Product Code": "SB-2006",
+      "Item Label": "Bin Picking Arm",
+      "Price": "approx. 1250",
+      "Line Total": "approx. 2500",
+      "Max Load": "10 kg",
+      "Arm Length": "900 mm",
+      "Curr.": "USD",
+      "Weight": "40 kg",
+      "Warehouse Location": "W3-B"
+    },
+    "normalized_data": {
+      "sku": "SB-2006",
+      "name": "Bin Picking Arm",
+      "unit_price": null,
+      "currency": "USD",
+      "payload_kg": 10.0,
+      "reach_m": 0.9
+    },
+    "normalization_notes": [
+      "Converted 900.0 mm -> 0.9 m"
+    ],
+    "jev": {
+      "execution_mode": "LIVE (TypeSafe JEV API)",
+      "model": "jev-1.14.0",
+      "mappings": {
+        "Product Code": "sku",
+        "Item Label": "name",
+        "Price": "unit_price",
+        "Line Total": "irrelevant",
+        "Max Load": "payload_kg",
+        "Arm Length": "reach_m",
+        "Curr.": "currency",
+        "Weight": "irrelevant",
+        "Warehouse Location": "irrelevant"
+      }
+    }
+  },
+  {
+    "staging_id": 20,
+    "source": {
+      "filename": "sample_catalog_supplier_b.xlsx",
+      "sha256": "ab2c1f5710bd9e16f81da7742ddae954a6cf48142c74eac11ddadc9be92d4f20",
+      "sheet": "Supplier_B_Price_List",
+      "row": 8,
+      "cells": {
+        "Product Code": "A8",
+        "Item Label": "B8",
+        "Price": "C8",
+        "Line Total": "D8",
+        "Max Load": "E8",
+        "Arm Length": "F8",
+        "Curr.": "G8",
+        "Weight": "H8",
+        "Warehouse Location": "I8"
+      }
+    },
+    "status": "needs_review",
+    "status_reason": "payload_kg must be greater than 0 (got -3.0 kg)",
+    "validation_results": [
+      "payload_kg must be greater than 0 (got -3.0 kg)"
+    ],
+    "raw_data": {
+      "Product Code": "SB-2007",
+      "Item Label": "Delta Picker",
+      "Price": "£ 5,600.00",
+      "Line Total": "£ 5,600.00",
+      "Max Load": "-3 kg",
+      "Arm Length": "800 mm",
+      "Curr.": "GBP",
+      "Weight": "60 kg",
+      "Warehouse Location": "W4-A"
+    },
+    "normalized_data": {
+      "sku": "SB-2007",
+      "name": "Delta Picker",
+      "unit_price": "5600.00",
+      "currency": "GBP",
+      "payload_kg": -3.0,
+      "reach_m": 0.8
+    },
+    "normalization_notes": [
+      "Converted 800.0 mm -> 0.8 m"
+    ],
+    "jev": {
+      "execution_mode": "LIVE (TypeSafe JEV API)",
+      "model": "jev-1.14.0",
+      "mappings": {
+        "Product Code": "sku",
+        "Item Label": "name",
+        "Price": "unit_price",
+        "Line Total": "irrelevant",
+        "Max Load": "payload_kg",
+        "Arm Length": "reach_m",
+        "Curr.": "currency",
+        "Weight": "irrelevant",
+        "Warehouse Location": "irrelevant"
+      }
+    }
+  },
+  {
+    "staging_id": 21,
+    "source": {
+      "filename": "sample_catalog_supplier_b.xlsx",
+      "sha256": "ab2c1f5710bd9e16f81da7742ddae954a6cf48142c74eac11ddadc9be92d4f20",
+      "sheet": "Supplier_B_Price_List",
+      "row": 9,
+      "cells": {
+        "Product Code": "A9",
+        "Item Label": "B9",
+        "Price": "C9",
+        "Line Total": "D9",
+        "Max Load": "E9",
+        "Arm Length": "F9",
+        "Curr.": "G9",
+        "Weight": "H9",
+        "Warehouse Location": "I9"
+      }
+    },
+    "status": "rejected",
+    "status_reason": "Price cannot be negative: -450.00",
+    "validation_results": [
+      "Price cannot be negative: -450.00"
+    ],
+    "raw_data": {
+      "Product Code": "SB-2008",
+      "Item Label": "Linear Axis Module",
+      "Price": "(450.00)",
+      "Line Total": "(450.00)",
+      "Max Load": "5 kg",
+      "Arm Length": "2 m",
+      "Curr.": "GBP",
+      "Weight": "12 kg",
+      "Warehouse Location": "W4-B"
+    },
+    "normalized_data": {
+      "sku": "SB-2008",
+      "name": "Linear Axis Module",
+      "unit_price": "-450.00",
+      "currency": "GBP",
+      "payload_kg": 5.0,
+      "reach_m": 2.0
+    },
+    "normalization_notes": [],
+    "jev": {
+      "execution_mode": "LIVE (TypeSafe JEV API)",
+      "model": "jev-1.14.0",
+      "mappings": {
+        "Product Code": "sku",
+        "Item Label": "name",
+        "Price": "unit_price",
+        "Line Total": "irrelevant",
+        "Max Load": "payload_kg",
+        "Arm Length": "reach_m",
+        "Curr.": "currency",
+        "Weight": "irrelevant",
+        "Warehouse Location": "irrelevant"
+      }
+    }
+  },
+  {
+    "staging_id": 22,
+    "source": {
+      "filename": "sample_catalog_supplier_b.xlsx",
+      "sha256": "ab2c1f5710bd9e16f81da7742ddae954a6cf48142c74eac11ddadc9be92d4f20",
+      "sheet": "Supplier_B_Price_List",
+      "row": 10,
+      "cells": {
+        "Product Code": "A10",
+        "Item Label": "B10",
+        "Price": "C10",
+        "Line Total": "D10",
+        "Max Load": "E10",
+        "Arm Length": "F10",
+        "Curr.": "G10",
+        "Weight": "H10",
+        "Warehouse Location": "I10"
+      }
+    },
+    "status": "needs_review",
+    "status_reason": "SKU 'RB-1003' is already an approved product with different values: unit_price 850.0000 -> 900.00",
+    "validation_results": [
+      "SKU 'RB-1003' is already an approved product with different values: unit_price 850.0000 -> 900.00"
+    ],
+    "raw_data": {
+      "Product Code": "RB-1003",
+      "Item Label": "Micro-Delta Precision Sorter",
+      "Price": "£ 900.00",
+      "Line Total": "£ 1,800.00",
+      "Max Load": "500 g",
+      "Arm Length": "1.2 m",
+      "Curr.": "GBP",
+      "Weight": "18 kg",
+      "Warehouse Location": "W5-A"
+    },
+    "normalized_data": {
+      "sku": "RB-1003",
+      "name": "Micro-Delta Precision Sorter",
+      "unit_price": "900.00",
+      "currency": "GBP",
+      "payload_kg": 0.5,
+      "reach_m": 1.2
+    },
+    "normalization_notes": [
+      "Converted 500.0 g -> 0.5 kg"
+    ],
+    "jev": {
+      "execution_mode": "LIVE (TypeSafe JEV API)",
+      "model": "jev-1.14.0",
+      "mappings": {
+        "Product Code": "sku",
+        "Item Label": "name",
+        "Price": "unit_price",
+        "Line Total": "irrelevant",
+        "Max Load": "payload_kg",
+        "Arm Length": "reach_m",
+        "Curr.": "currency",
+        "Weight": "irrelevant",
+        "Warehouse Location": "irrelevant"
+      }
+    }
+  }
+]

@@ -1,0 +1,105 @@
+{
+  "files": [
+    {
+      "source_filename": "sample_catalog.xlsx",
+      "source_file_hash": "f9759c903db4567967e4ad2e8ba1600217fadcf0234f4ad41a78b1e0dd9b2038",
+      "source_sheet": "Supplier_Robotics_Catalog",
+      "total_rows": 13,
+      "new_rows": 13,
+      "updated_rows": 0,
+      "ready_count": 7,
+      "needs_review_count": 2,
+      "rejected_count": 4,
+      "column_mappings": {
+        "Part Number": "sku",
+        "Product Description": "name",
+        "Unit Cost": "unit_price",
+        "Extended Amount": "irrelevant",
+        "Rated Load": "payload_kg",
+        "Working Reach": "reach_m",
+        "Currency": "currency",
+        "Warranty Duration": "irrelevant"
+      },
+      "jev_mode": "LIVE (TypeSafe JEV API)",
+      "jev_model": "jev-1.14.0",
+      "jev_notice": null,
+      "jev_evidence_files": [
+        "D:\\jev-assignment\\output\\jev_evidence\\jev_call_20261110T123432338844Z.json",
+        "D:\\jev-assignment\\output\\jev_evidence\\jev_call_20261110T123432819579Z.json"
+      ],
+      "mapping_issues": []
+    },
+    {
+      "source_filename": "sample_catalog_supplier_b.xlsx",
+      "source_file_hash": "ab2c1f5710bd9e16f81da7742ddae954a6cf48142c74eac11ddadc9be92d4f20",
+      "source_sheet": "Supplier_B_Price_List",
+      "total_rows": 9,
+      "new_rows": 9,
+      "updated_rows": 0,
+      "ready_count": 3,
+      "needs_review_count": 4,
+      "rejected_count": 2,
+      "column_mappings": {
+        "Product Code": "sku",
+        "Item Label": "name",
+        "Price": "unit_price",
+        "Line Total": "irrelevant",
+        "Max Load": "payload_kg",
+        "Arm Length": "reach_m",
+        "Curr.": "currency",
+        "Weight": "irrelevant",
+        "Warehouse Location": "irrelevant"
+      },
+      "jev_mode": "LIVE (TypeSafe JEV API)",
+      "jev_model": "jev-1.14.0",
+      "jev_notice": null,
+      "jev_evidence_files": [
+        "D:\\jev-assignment\\output\\jev_evidence\\jev_call_20261110T123433516059Z.json",
+        "D:\\jev-assignment\\output\\jev_evidence\\jev_call_20261110T123434115776Z.json"
+      ],
+      "mapping_issues": []
+    }
+  ],
+  "approvals": [
+    {
+      "eligible_count": 7,
+      "newly_approved_count": 7,
+      "skipped_existing_count": 0,
+      "approved_skus": [
+        "RB-1001",
+        "RB-1002",
+        "RB-1003",
+        "RB-1004",
+        "RB-1005",
+        "RB-1010",
+        "RB-1012"
+      ],
+      "message": "Approved 7 new product(s) out of 7 eligible. Skipped 0 whose SKU is already in the catalog."
+    },
+    {
+      "eligible_count": 3,
+      "newly_approved_count": 3,
+      "skipped_existing_count": 0,
+      "approved_skus": [
+        "SB-2001",
+        "SB-2002",
+        "SB-2003"
+      ],
+      "message": "Approved 3 new product(s) out of 3 eligible. Skipped 0 whose SKU is already in the catalog."
+    }
+  ],
+  "idempotency_check": {
+    "reimport_new_rows": 0,
+    "reimport_updated_rows": 13,
+    "staging_rows_before_after": [
+      22,
+      22
+    ],
+    "products_before_after": [
+      10,
+      10
+    ],
+    "second_approval_newly_approved": 0,
+    "passed": true
+  }
+}

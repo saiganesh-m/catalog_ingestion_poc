@@ -1,0 +1,88 @@
+{
+  "note": "Files in output/jev_evidence/ are real request/response exchanges with the JEV API, saved automatically with the API key redacted. Mock answers are never saved there.",
+  "this_run": {
+    "sample_catalog.xlsx": {
+      "execution_mode": "LIVE (TypeSafe JEV API)",
+      "is_live": true,
+      "model": "jev-1.14.0",
+      "blocker": null,
+      "calls": [
+        {
+          "round": "mapping",
+          "outcome": "success",
+          "request_id": "req_01a1c573fcd5775bb52f0e8cda23d430",
+          "duration_ms": 435,
+          "usage": {
+            "input_tokens": 2705,
+            "output_tokens": 587
+          },
+          "evidence_file": "D:\\jev-assignment\\output\\jev_evidence\\jev_call_20261110T123434703350Z.json"
+        },
+        {
+          "round": "follow_up",
+          "outcome": "success",
+          "request_id": "req_01a1c573fe617d9c899c0788fb756168",
+          "duration_ms": 379,
+          "usage": {
+            "input_tokens": 1059,
+            "output_tokens": 61
+          },
+          "evidence_file": "D:\\jev-assignment\\output\\jev_evidence\\jev_call_20261110T123435085173Z.json"
+        }
+      ]
+    },
+    "sample_catalog_supplier_b.xlsx": {
+      "execution_mode": "LIVE (TypeSafe JEV API)",
+      "is_live": true,
+      "model": "jev-1.14.0",
+      "blocker": null,
+      "calls": [
+        {
+          "round": "mapping",
+          "outcome": "success",
+          "request_id": "req_01a1c573f802759981c301d0ecfa7394",
+          "duration_ms": 524,
+          "usage": {
+            "input_tokens": 2997,
+            "output_tokens": 661
+          },
+          "evidence_file": "D:\\jev-assignment\\output\\jev_evidence\\jev_call_20261110T123433516059Z.json"
+        },
+        {
+          "round": "follow_up",
+          "outcome": "success",
+          "request_id": "req_01a1c573fa997eebb35414f239f24f00",
+          "duration_ms": 598,
+          "usage": {
+            "input_tokens": 1103,
+            "output_tokens": 61
+          },
+          "evidence_file": "D:\\jev-assignment\\output\\jev_evidence\\jev_call_20261110T123434115776Z.json"
+        }
+      ]
+    }
+  },
+  "successful_live_calls_on_record": [
+    "jev_call_20261110T115224270598Z.json",
+    "jev_call_20261110T115243838938Z.json",
+    "jev_call_20261110T115244410224Z.json",
+    "jev_call_20261110T120342786649Z.json",
+    "jev_call_20261110T120343560389Z.json",
+    "jev_call_20261110T121836756629Z.json",
+    "jev_call_20261110T121837122631Z.json",
+    "jev_call_20261110T121855103761Z.json",
+    "jev_call_20261110T121855520309Z.json",
+    "jev_call_20261110T121856141176Z.json",
+    "jev_call_20261110T121856544371Z.json",
+    "jev_call_20261110T122503966435Z.json",
+    "jev_call_20261110T122504328890Z.json",
+    "jev_call_20261110T122504892415Z.json",
+    "jev_call_20261110T122505272424Z.json",
+    "jev_call_20261110T123432338844Z.json",
+    "jev_call_20261110T123432819579Z.json",
+    "jev_call_20261110T123433516059Z.json",
+    "jev_call_20261110T123434115776Z.json",
+    "jev_call_20261110T123434703350Z.json",
+    "jev_call_20261110T123435085173Z.json"
+  ]
+}

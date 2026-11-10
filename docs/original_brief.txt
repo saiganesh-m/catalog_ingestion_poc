@@ -1,0 +1,118 @@
+Assignment: Build a catalog ingestion POC using JEV
+Duration: Four hours
+Technology: Python, JEV API, SQL database
+Interface: CLI or FastAPI. A frontend is not required.
+Business problem
+We receive product catalogs from different suppliers. Their spreadsheets use different column names, formats, and units.
+Build a small application that reads a supplied Excel catalog, maps its contents into a consistent product structure, validates the records, and stores approved records in a database.
+JEV must perform a meaningful decision-making step in the pipeline. Explain which work belongs to Python and which work you assign to JEV.
+Input
+We will provide an Excel workbook containing approximately 10–15 product rows. Expect examples such as:
+Different headers: Part Number, Product Code, or SKU.
+Different descriptions for product names.
+Prices containing currency symbols and separators.
+Payload or reach values containing units.
+A missing required value.
+An invalid numeric value.
+A duplicate product.
+An irrelevant column, such as warranty duration.
+Start with Excel. Support for a text-based PDF is an optional extension.
+Target product fields
+
+
+Field
+
+
+Requirement
+
+
+sku
+
+
+Required product identifier
+
+
+name
+
+
+Required product name
+
+
+unit_price
+
+
+Required decimal value, zero or greater
+
+
+currency
+
+
+Required currency code supported by the POC
+
+
+payload_kg
+
+
+Optional numeric value
+
+
+reach_m
+
+
+Optional numeric value
+Preserve provenance separately: source filename, sheet, row number, original values, and the decisions used to produce the normalized record.
+Required workflow
+A. Read the source
+Use Python libraries to read Excel cells and retain their locations. Do not manually rewrite the supplied rows as application data.
+B. Use JEV
+Use JEV to map source columns to target fields, or to select among ambiguous candidate values.
+For example, determine whether Rated Load represents payload and whether Unit Cost or Extended Amount represents the unit price.
+Use appropriate typed questions. Handle cases where no candidate fits or the decision is uncertain. Do not force every column into a target field.
+Keep the model’s actual response and available probability/confidence information for inspection.
+C. Normalize and validate
+Use Python to:
+Convert selected price strings into decimal values.
+Normalize supported units, such as millimetres to metres.
+Check required fields and numeric ranges.
+Detect duplicates.
+Preserve missing values rather than inventing them.
+Do not silently interpret an ambiguous currency symbol. Use explicit source context or send the record for review.
+D. Stage the records
+Store each processed row in a staging area with one of these statuses:
+ready: required fields are valid and mapping is sufficiently certain.
+needs_review: interpretation is unresolved or conflicting.
+rejected: the record fails a hard validation rule.
+Include a specific reason for every review or rejection.
+A JEV confidence value must not override a failed numeric or required-field validation.
+E. Approve and save
+Provide a command or endpoint to approve eligible staged records and save them into a product table.
+Records requiring review must remain outside the final product table until resolved. Reprocessing the same file must not create duplicate approved products.
+F. Demonstrate the result
+Show:
+The original source.
+The column mapping and JEV decision.
+Normalized staged records.
+Review/rejection reasons.
+Approved database records.
+A repeated import demonstrating duplicate protection.
+Database and environment
+Use PostgreSQL if a working local connection is supplied. Otherwise, SQLite is acceptable for this time-boxed assignment; explain how you would switch to PostgreSQL.
+Read the API key from an environment variable. Do not include credentials in the submission.
+If API access fails, report the blocker. A clearly labelled mock can demonstrate the remaining pipeline, but it must not be presented as a successful live JEV integration.
+Deliverables
+Source code and dependency file.
+Database schema or initialization script.
+README with setup and run commands.
+Sample normalized output and ingestion summary.
+Evidence of a real JEV call, with credentials removed.
+A short evaluation showing correctly mapped fields, correctly normalized values, and handled edge cases.
+Known limitations and unfinished work.
+Scope boundaries
+No React UI, vector database, RAG chatbot, model training, 3D configuration, voice agent, or SAP integration is required.
+Prioritize one working end-to-end flow.
+You may use documentation and AI coding tools. Disclose their use and be prepared to explain and modify your implementation.
+Suggested time allocation
+Hour 1: source parsing, target schema, and database setup.
+Hour 2: JEV integration and field mapping.
+Hour 3: normalization, validation, staging, and approval.
+Hour 4: edge cases, verification, documentation, and demonstration.

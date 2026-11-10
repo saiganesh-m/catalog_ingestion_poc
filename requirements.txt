@@ -1,0 +1,32 @@
+# Web Framework & Server
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+python-multipart>=0.0.12
+
+# Data Validation & Settings
+pydantic>=2.9.0
+pydantic-settings>=2.5.0
+
+# Excel Processing
+openpyxl>=3.1.5
+
+# Database ORM (SQLite works out of the box)
+sqlalchemy>=2.0.35
+# Optional drivers - install only the one you switch to (see docs/GUIDE.md, "Switching database"):
+#   PostgreSQL: psycopg[binary]>=3.1
+#   MySQL:      pymysql>=1.1  cryptography>=42  (cryptography is needed for MySQL 8 authentication)
+
+# HTTP Client (for JEV API calls)
+httpx>=0.27.2
+truststore>=0.10.0  # uses the OS certificate store (fixes SSL verify errors behind proxies/antivirus)
+
+# Environment Variables
+python-dotenv>=1.0.1
+
+# Terminal Formatting for Demonstration
+tabulate>=0.9.0
+colorama>=0.4.6
+
+# Automated Testing
+pytest>=8.0.0
+

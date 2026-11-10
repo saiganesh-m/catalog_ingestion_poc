@@ -1,0 +1,188 @@
+{
+  "captured_at": "2026-11-10T12:34:34.115776+00:00",
+  "outcome": "success",
+  "request": {
+    "method": "POST",
+    "url": "https://api.typesafe.ai/v1/systemone",
+    "headers": {
+      "Authorization": "Bearer ***REDACTED***",
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "model": "jev-latest",
+      "state": {
+        "catalog_context": "Supplier product catalog for industrial robotics and automation equipment",
+        "columns": [
+          {
+            "header": "Product Code",
+            "sample_values": [
+              "SB-2001",
+              "SB-2002",
+              "SB-2003"
+            ]
+          },
+          {
+            "header": "Item Label",
+            "sample_values": [
+              "Heavy-Duty Palletizing Robot",
+              "Compact SCARA Arm",
+              "Gantry Loader"
+            ]
+          },
+          {
+            "header": "Price",
+            "sample_values": [
+              "USD 48,500.00",
+              "CA$ 7,250.00",
+              "1.250,00 €"
+            ]
+          },
+          {
+            "header": "Line Total",
+            "sample_values": [
+              "USD 97,000.00",
+              "CA$ 14,500.00",
+              "2.500,00 €"
+            ]
+          },
+          {
+            "header": "Max Load",
+            "sample_values": [
+              "1,500 kg",
+              "6 kg",
+              "0,5 t"
+            ]
+          },
+          {
+            "header": "Arm Length",
+            "sample_values": [
+              "3,200 mm",
+              "600 mm",
+              "48\""
+            ]
+          },
+          {
+            "header": "Curr.",
+            "sample_values": [
+              "USD",
+              "EUR",
+              "GBP"
+            ]
+          },
+          {
+            "header": "Weight",
+            "sample_values": [
+              "2,850 kg",
+              "28 kg",
+              "410 kg"
+            ]
+          },
+          {
+            "header": "Warehouse Location",
+            "sample_values": [
+              "W1-A",
+              "W1-B",
+              "W2-A"
+            ]
+          }
+        ]
+      },
+      "questions": {
+        "check_col_2": {
+          "type": "noul",
+          "instructions": {
+            "column": {
+              "header": "Price",
+              "sample_values": [
+                "USD 48,500.00",
+                "CA$ 7,250.00",
+                "1.250,00 €"
+              ]
+            },
+            "candidate_field": {
+              "name": "unit_price",
+              "meaning": "Price of ONE single unit (not an extended, line or order total)"
+            },
+            "question": "Does `column` hold `candidate_field`?"
+          },
+          "criteria": {
+            "true": "Yes - Price of ONE single unit (not an extended, line or order total)",
+            "false": "No - the column holds something else"
+          }
+        },
+        "check_col_4": {
+          "type": "noul",
+          "instructions": {
+            "column": {
+              "header": "Max Load",
+              "sample_values": [
+                "1,500 kg",
+                "6 kg",
+                "0,5 t"
+              ]
+            },
+            "candidate_field": {
+              "name": "payload_kg",
+              "meaning": "Payload or rated load: the mass the product can carry or lift"
+            },
+            "question": "Does `column` hold `candidate_field`?"
+          },
+          "criteria": {
+            "true": "Yes - Payload or rated load: the mass the product can carry or lift",
+            "false": "No - the column holds something else"
+          }
+        },
+        "check_col_5": {
+          "type": "noul",
+          "instructions": {
+            "column": {
+              "header": "Arm Length",
+              "sample_values": [
+                "3,200 mm",
+                "600 mm",
+                "48\""
+              ]
+            },
+            "candidate_field": {
+              "name": "reach_m",
+              "meaning": "Reach: the maximum working distance or arm length"
+            },
+            "question": "Does `column` hold `candidate_field`?"
+          },
+          "criteria": {
+            "true": "Yes - Reach: the maximum working distance or arm length",
+            "false": "No - the column holds something else"
+          }
+        }
+      }
+    }
+  },
+  "response": {
+    "status_code": 200,
+    "request_id": "req_01a1c573fa997eebb35414f239f24f00",
+    "duration_ms": 598,
+    "attempts": 1,
+    "body": {
+      "model": "jev-1.14.0",
+      "answers": {
+        "check_col_2": {
+          "type": "noul",
+          "noul": 0.95
+        },
+        "check_col_4": {
+          "type": "noul",
+          "noul": 0.97
+        },
+        "check_col_5": {
+          "type": "noul",
+          "noul": 0.95
+        }
+      },
+      "usage": {
+        "input_tokens": 1103,
+        "output_tokens": 61
+      }
+    }
+  },
+  "error": null
+}

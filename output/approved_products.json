@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "sku": "RB-1001",
+    "name": "Articulated Robot Arm 6-Axis",
+    "unit_price": "1250.0000",
+    "currency": "USD",
+    "payload_kg": 10.0,
+    "reach_m": 1.5,
+    "source": "sample_catalog.xlsx row 2",
+    "staging_record_id": 1
+  },
+  {
+    "id": 2,
+    "sku": "RB-1002",
+    "name": "SCARA High-Speed Assembly Arm",
+    "unit_price": "2450.5000",
+    "currency": "EUR",
+    "payload_kg": 5.0,
+    "reach_m": 0.8,
+    "source": "sample_catalog.xlsx row 3",
+    "staging_record_id": 2
+  },
+  {
+    "id": 3,
+    "sku": "RB-1003",
+    "name": "Micro-Delta Precision Sorter",
+    "unit_price": "850.0000",
+    "currency": "GBP",
+    "payload_kg": 0.5,
+    "reach_m": 1.2,
+    "source": "sample_catalog.xlsx row 4",
+    "staging_record_id": 3
+  },
+  {
+    "id": 4,
+    "sku": "RB-1004",
+    "name": "Heavy Industrial Palletizer",
+    "unit_price": "8900.0000",
+    "currency": "USD",
+    "payload_kg": 22.68,
+    "reach_m": 1.981,
+    "source": "sample_catalog.xlsx row 5",
+    "staging_record_id": 4
+  },
+  {
+    "id": 5,
+    "sku": "RB-1005",
+    "name": "Pick-and-Place Cartesian Sorter",
+    "unit_price": "185000.0000",
+    "currency": "INR",
+    "payload_kg": 8.0,
+    "reach_m": 1.1,
+    "source": "sample_catalog.xlsx row 6",
+    "staging_record_id": 5
+  },
+  {
+    "id": 6,
+    "sku": "RB-1010",
+    "name": "Modular Servo Actuator",
+    "unit_price": "180.0000",
+    "currency": "USD",
+    "payload_kg": 1.5,
+    "reach_m": 0.3,
+    "source": "sample_catalog.xlsx row 12",
+    "staging_record_id": 11
+  },
+  {
+    "id": 7,
+    "sku": "RB-1012",
+    "name": "Controller Cabinet Master Unit",
+    "unit_price": "4200.0000",
+    "currency": "USD",
+    "payload_kg": null,
+    "reach_m": null,
+    "source": "sample_catalog.xlsx row 14",
+    "staging_record_id": 13
+  },
+  {
+    "id": 8,
+    "sku": "SB-2001",
+    "name": "Heavy-Duty Palletizing Robot",
+    "unit_price": "48500.0000",
+    "currency": "USD",
+    "payload_kg": 1500.0,
+    "reach_m": 3.2,
+    "source": "sample_catalog_supplier_b.xlsx row 2",
+    "staging_record_id": 14
+  },
+  {
+    "id": 9,
+    "sku": "SB-2002",
+    "name": "Compact SCARA Arm",
+    "unit_price": "7250.0000",
+    "currency": "CAD",
+    "payload_kg": 6.0,
+    "reach_m": 0.6,
+    "source": "sample_catalog_supplier_b.xlsx row 3",
+    "staging_record_id": 15
+  },
+  {
+    "id": 10,
+    "sku": "SB-2003",
+    "name": "Gantry Loader",
+    "unit_price": "1250.0000",
+    "currency": "EUR",
+    "payload_kg": 500.0,
+    "reach_m": 1.219,
+    "source": "sample_catalog_supplier_b.xlsx row 4",
+    "staging_record_id": 16
+  }
+]
